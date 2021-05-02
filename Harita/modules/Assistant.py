@@ -23,7 +23,7 @@ from Harita import *
 
 from Harita.events import register
 
-@register(pattern=r"^/harita(?: |$)([\s\S]*)")
+@register(pattern=r"^/titan(?: |$)([\s\S]*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -168,9 +168,9 @@ file_helpo = file_help.replace("_", " ")
 
 __help__ = """
 **For text assistant**
- - /harita <question>: Ask harita any question and it will give accurate reply. For eg: `/harita where is Taj Mahal`, `/harita what is the age of Virat Kohli` etc..
+ - /titan <question>: Ask harita any question and it will give accurate reply. For eg: `/titan Where is Taj Mahal`, `/titan What is the age of Kumar Sangakkara` etc..
 **For voice assistant**
- - /harita: Reply to a voice query and get the results in voice output (ENGLISH ONLY)
+ - /titan: Reply to a voice query and get the results in voice output (ENGLISH ONLY)
  
 **Terminal Assistant**
  - /howdoi <question>: Get all coding related answers from Harita. Syntax: `/howdoi print hello world in python`
